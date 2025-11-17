@@ -1,52 +1,77 @@
 import React from 'react';
 import { VisionIcon, MissionIcon, TeamIcon } from './icons/icons';
 
-const InfoCard: React.FC<{ icon: React.ReactNode; title: string; children: React.ReactNode }> = ({ icon, title, children }) => (
+const InfoCard: React.FC<{ icon: React.ReactNode; title: string; children: React.ReactNode }> = ({
+  icon,
+  title,
+  children,
+}) => (
   <div className="flex items-start space-x-4">
-    <div className="flex-shrink-0 w-12 h-12 bg-slate-200 dark:bg-slate-800 rounded-full flex items-center justify-center text-cyan-600 dark:text-cyan-400">
+    {/* Icon Container */}
+    <div className="flex-shrink-0 w-12 h-12 bg-slate-200 dark:bg-slate-800 rounded-full flex items-center justify-center text-cyan-600 dark:text-cyan-400 shadow-md shadow-cyan-500/20 dark:shadow-cyan-400/20">
       {icon}
     </div>
+
+    {/* Text */}
     <div>
       <h3 className="text-xl font-bold text-gray-900 dark:text-white">{title}</h3>
-      <p className="text-gray-600 dark:text-gray-400 mt-1">{children}</p>
+      <p className="text-gray-600 dark:text-gray-400 mt-1 leading-relaxed">{children}</p>
     </div>
   </div>
 );
 
 const AboutUsSection: React.FC = () => {
   return (
-    <section className="py-20 sm:py-32">
-      <div className="container mx-auto px-6">
+    <section className="py-20 sm:py-32 relative overflow-hidden">
+
+      {/* Background glow effects */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-cyan-500/20 dark:bg-cyan-500/10 blur-[180px] rounded-full"></div>
+      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-purple-600/20 dark:bg-purple-600/10 blur-[150px] rounded-full"></div>
+
+      <div className="container mx-auto px-6 relative z-10">
+
+        {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white">
-            Pioneering Digital <span className="gradient-text">Excellence</span>
+            Illuminating the <span className="gradient-text">Future of Technology</span>
           </h2>
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            We are a collective of creators, thinkers, and innovators dedicated to pushing the boundaries of technology.
+            At XenoraTech, we build digital experiences that shine—powered by clarity, precision engineering, and purposeful innovation.
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 gap-12 items-center">
+
+          {/* Image Section */}
           <div className="relative">
             <div className="absolute -inset-2 bg-gradient-to-r from-purple-600 to-cyan-500 rounded-lg blur-xl opacity-20"></div>
-            <img 
-              src="https://picsum.photos/seed/techteam/800/600" 
-              alt="Colombo Trio Digital Team" 
+            <img
+              src="https://picsum.photos/seed/xenoratechteam/800/600"
+              alt="XenoraTech Team"
               className="relative rounded-lg shadow-2xl w-full h-auto"
             />
           </div>
+
+          {/* Information Cards */}
           <div className="space-y-8">
             <InfoCard icon={<MissionIcon />} title="Our Mission">
-              To empower businesses with transformative digital solutions that are scalable, secure, and user-centric, fostering growth in a competitive landscape.
+              To create high-quality, future-ready digital solutions that empower businesses through clarity, innovation, 
+              and precise engineering—technology that illuminates possibilities instead of complicating them.
             </InfoCard>
+
             <InfoCard icon={<VisionIcon />} title="Our Vision">
-              To be a leading technology partner in Sri Lanka and beyond, renowned for our innovation, quality, and commitment to client success.
+              To become a global leader in next-generation software, shaping a world where technology carries identity, 
+              purpose, and brilliance—bright enough to move industries forward.
             </InfoCard>
-            <InfoCard icon={<TeamIcon />} title="Our Team">
-               Our strength lies in our diverse team of experts, passionate about technology and driven by a shared goal of delivering outstanding results.
+
+            <InfoCard icon={<TeamIcon />} title="Our Story">
+              The name XenoraTech comes from “Xenon”—one of the brightest elements—combined with “Aura,” symbolizing the 
+              digital presence surrounding every great experience. We blend clarity and identity into every product we create.
             </InfoCard>
           </div>
+
         </div>
+
       </div>
     </section>
   );
