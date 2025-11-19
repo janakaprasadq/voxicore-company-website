@@ -29,36 +29,22 @@ export default function PortfolioPreview() {
     return (
         <section className="py-24 bg-white dark:bg-gray-950 overflow-hidden">
             <div className="container mx-auto px-6">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-16">
-                    <div className="max-w-2xl">
-                        <motion.span
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            className="text-blue-600 dark:text-blue-400 font-semibold tracking-wider uppercase text-sm"
-                        >
-                            Our Work
-                        </motion.span>
-                        <motion.h2
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.1 }}
-                            className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mt-4"
-                        >
-                            Featured Projects
-                        </motion.h2>
-                    </div>
-                    <motion.div
-                        initial={{ opacity: 0, x: 20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ delay: 0.2 }}
+                <div className="text-center mb-16">
+                    <motion.span
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        className="text-blue-600 dark:text-blue-400 font-semibold tracking-wider uppercase text-sm block mb-2"
                     >
-                        <Link
-                            href="/portfolio"
-                            className="hidden md:inline-flex items-center px-6 py-3 rounded-full border border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors text-gray-900 dark:text-white font-medium"
-                        >
-                            View All Projects <span className="ml-2">→</span>
-                        </Link>
-                    </motion.div>
+                        Our Work
+                    </motion.span>
+                    <motion.h2
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.1 }}
+                        className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white"
+                    >
+                        Featured Projects
+                    </motion.h2>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -94,10 +80,10 @@ export default function PortfolioPreview() {
                     ))}
                 </div>
 
-                <div className="mt-8 md:hidden text-center">
+                <div className="mt-12 text-center">
                     <Link
                         href="/portfolio"
-                        className="inline-flex items-center px-6 py-3 rounded-full border border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors text-gray-900 dark:text-white font-medium"
+                        className="inline-flex items-center px-8 py-4 rounded-full border border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors text-gray-900 dark:text-white font-medium"
                     >
                         View All Projects <span className="ml-2">→</span>
                     </Link>
