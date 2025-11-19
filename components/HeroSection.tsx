@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
 
 interface HeroSectionProps {
   scrollToContact: () => void;
@@ -63,15 +64,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToContact }) => {
           style={{ animationDelay: "0.2s" }}
         >
           Innovate. Build. Scale with <br />
-          <span className="gradient-text">Colombo Trio Digital.</span>
+          <span className="gradient-text">VOXICORE Digital.</span>
         </h1>
 
         <p
           className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8 animate-fade-in-up"
           style={{ animationDelay: "0.4s" }}
         >
-          We craft bespoke digital solutions that drive growth, efficiency, and
-          success in the modern tech landscape.
+          Crafting high-impact digital products that accelerate growth, empower businesses, and redefine modern technology
         </p>
 
         <div
@@ -85,12 +85,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToContact }) => {
             Schedule a Call
           </button>
 
-          <a
-            href="#portfolio"
+          <Link
+            href="/portfolio"
             className="bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/20 text-gray-800 dark:text-white font-semibold px-8 py-3 rounded-full hover:bg-black/10 dark:hover:bg-white/20 transition-colors duration-300 backdrop-blur-sm"
           >
             See Our Work
-          </a>
+          </Link>
         </div>
       </div>
 

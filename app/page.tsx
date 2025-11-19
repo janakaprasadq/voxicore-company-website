@@ -9,6 +9,7 @@ import StatsSection from "@/components/StatsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Home() {
   // Function to scroll to contact section
@@ -29,6 +30,7 @@ export default function Home() {
       <TestimonialsSection />
       <FAQSection />
       <CTASection />
+      <ScrollToTop />
     </>
   );
 }
