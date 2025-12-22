@@ -2,22 +2,22 @@ import React from 'react';
 
 const teamMembers = [
   {
-    name: "Alex Morgan",
-    role: "CEO & Founder",
+    name: "Janaka Prasad",
+    role: "Developer",
     image: "https://picsum.photos/seed/alexmorgan/400/400",
-    bio: "Visionary leader with a passion for innovation and digital transformation."
+    bio: "Passionate about full-stack architectures and building scalable, high-performance web applications."
   },
   {
-    name: "Sarah Jenkins",
-    role: "CTO",
+    name: "Nipun Lakshitha",
+    role: "Developer",
     image: "https://picsum.photos/seed/sarahjenkins/400/400",
-    bio: "Tech enthusiast driving the engineering excellence behind our solutions."
+    bio: "Dedicated to crafting seamless user experiences and optimizing backend efficiency for robust solutions."
   },
   {
-    name: "David Chen",
-    role: "Head of Design",
+    name: "Hasitha Hirushan",
+    role: "Developer",
     image: "https://picsum.photos/seed/davidchen/400/400",
-    bio: "Creative mind crafting intuitive and beautiful user experiences."
+    bio: "Innovative problem solver specializing in modern frontend technologies and interactive design systems."
   },
   {
     name: "Emily Rodriguez",

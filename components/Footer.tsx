@@ -140,8 +140,7 @@ const Footer = () => {
               <li className="flex items-start gap-3 text-slate-600 dark:text-slate-400 group">
                 <MapPin className="w-5 h-5 text-blue-600 dark:text-blue-500 mt-1 group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors" />
                 <span className="group-hover:text-slate-900 dark:group-hover:text-slate-300 transition-colors">
-                  123 Tech Boulevard,<br />
-                  Silicon Valley, CA 94025
+                  Sri Lanka
                 </span>
               </li>
             </ul>
