@@ -3,19 +3,19 @@ import React from 'react';
 const teamMembers = [
   {
     name: "Janaka Prasad",
-    role: "Developer",
+    role: "Co-founder",
     image: "/images/about/Janaka.jpg",
     bio: "Passionate about full-stack architectures and building scalable, high-performance web applications."
   },
   {
     name: "Nipun Lakshitha",
-    role: "Developer",
+    role: "Co-founder",
     image: "/images/about/Nipun.jpeg",
     bio: "Dedicated to crafting seamless user experiences and optimizing backend efficiency for robust solutions."
   },
   {
     name: "Hasitha Hirushan",
-    role: "Developer",
+    role: "Co-founder",
     image: "/images/about/Hasitha.jpeg",
     bio: "Innovative problem solver specializing in modern frontend technologies and interactive design systems."
   },
