@@ -16,7 +16,6 @@ const portfolioItems: PortfolioItem[] = [
     ],
     description: "VibeWear is an E-commerce website. Customers can buy clothes",
     technologies: ["React", "NodeJs", "ExpressJs", "MongoDb", "AWS"],
-    previewLink: "https://threadloom-wfyw.vercel.app/",
     imageUrlLight: "/images/portfolio/vibewear/MainLight.png",
     imagesLight: [
       "/images/portfolio/vibewear/1.png",
@@ -208,9 +207,8 @@ const PortfolioCard: React.FC<{
     <img
       src={item.imageUrl}
       alt={item.title}
-      className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 ${
-        item.imageUrlLight ? "hidden dark:block" : ""
-      }`}
+      className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 ${item.imageUrlLight ? "hidden dark:block" : ""
+        }`}
     />
     {item.imageUrlLight && (
       <img
